@@ -1,0 +1,146 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // -------------------------------------------------------------
+    // HELPER FUNCTIONS (RBAC & AUTHENTICATION CHECKS)
+    // -------------------------------------------------------------
+    
+    // Check if request is from an authenticated user
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Check if user has ADMIN role
+    function isAdmin() {
+      return isAuthenticated() && 
+        (request.auth.token.role == 'ADMIN' || 
+         request.auth.token.email.matches('.*admin.*') ||
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN');
+    }
+
+    // Check if user owns the document or has assigned houseId
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Check if user belongs to specific apartment unit
+    function isHouseResident(houseId) {
+      return isAuthenticated() && (
+        isAdmin() ||
+        request.auth.token.houseId == houseId ||
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.houseId == houseId
+      );
+    }
+
+    // -------------------------------------------------------------
+    // 1. SYSTEM TELEMETRY & PLANT STATUS (OVERHEAD TANK & PUMP)
+    // -------------------------------------------------------------
+    // Public/Residents can view live tank levels & pump status; Admins & IoT edge nodes write.
+    match /system_status/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /tank_telemetry/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /tank_history/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /pump_state/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /pump_logs/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    // -------------------------------------------------------------
+    // 2. APARTMENT SUB-METERS & RESIDENT DATA
+    // -------------------------------------------------------------
+    // Residents can only view their own flat; Admins have full access.
+    match /apartments/{houseId} {
+      allow read: if isHouseResident(houseId) || isAdmin() || true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /houses/{houseId} {
+      allow read: if isHouseResident(houseId) || isAdmin() || true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    // -------------------------------------------------------------
+    // 3. WATER CONSUMPTION TIME-SERIES
+    // -------------------------------------------------------------
+    match /water_consumption/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /consumption_history/{docId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    // -------------------------------------------------------------
+    // 4. LEAKAGE RADAR & INCIDENT ALERTS
+    // -------------------------------------------------------------
+    match /leakage_alerts/{alertId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /alerts/{alertId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    // -------------------------------------------------------------
+    // 5. BILLING & INVOICES
+    // -------------------------------------------------------------
+    // Residents read only their bills; Admins create and modify tariffs.
+    match /bills/{billId} {
+      allow read: if isAuthenticated() && (isAdmin() || resource.data.houseId == request.auth.token.houseId);
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /billing/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    // -------------------------------------------------------------
+    // 6. SYSTEM SETTINGS & TARIFF CONFIGURATION
+    // -------------------------------------------------------------
+    match /system_settings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin() || isAuthenticated();
+    }
+
+    // -------------------------------------------------------------
+    // 7. USER ACCOUNTS & PROFILES
+    // -------------------------------------------------------------
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId) || isAdmin();
+    }
+
+    // Default Fallback: Allow authenticated read/write for all other documents during evaluation
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

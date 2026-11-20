@@ -1,0 +1,682 @@
+{
+  "users": {
+    "USR_ADMIN": {
+      "userId": "USR_ADMIN",
+      "name": "Property Admin",
+      "email": "admin@aquanest.io",
+      "phone": "+91 98765 43210",
+      "role": "ADMIN",
+      "houseId": "ALL",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.805237"
+    },
+    "USR_RES_1": {
+      "userId": "USR_RES_1",
+      "name": "Rajesh Sharma",
+      "email": "rajesh@aquanest.io",
+      "phone": "+91 98765 00001",
+      "role": "RESIDENT",
+      "houseId": "H101",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.807949"
+    },
+    "USR_RES_2": {
+      "userId": "USR_RES_2",
+      "name": "Priya Venkatesh",
+      "email": "priya@aquanest.io",
+      "phone": "+91 98765 00002",
+      "role": "RESIDENT",
+      "houseId": "H102",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.817545"
+    },
+    "USR_RES_3": {
+      "userId": "USR_RES_3",
+      "name": "Arun Kumar",
+      "email": "arun@aquanest.io",
+      "phone": "+91 98765 00003",
+      "role": "RESIDENT",
+      "houseId": "H103",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.827329"
+    },
+    "USR_RES_4": {
+      "userId": "USR_RES_4",
+      "name": "Sneha Patel",
+      "email": "sneha@aquanest.io",
+      "phone": "+91 98765 00004",
+      "role": "RESIDENT",
+      "houseId": "H104",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.836936"
+    },
+    "USR_RES_5": {
+      "userId": "USR_RES_5",
+      "name": "Vikram Malhotra",
+      "email": "vikram@aquanest.io",
+      "phone": "+91 98765 00005",
+      "role": "RESIDENT",
+      "houseId": "H105",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.847941"
+    },
+    "USR_RES_6": {
+      "userId": "USR_RES_6",
+      "name": "Ananya Reddy",
+      "email": "ananya@aquanest.io",
+      "phone": "+91 98765 00006",
+      "role": "RESIDENT",
+      "houseId": "H106",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-07T22:29:52.860228"
+    },
+    "USR_RES_ravi": {
+      "userId": "USR_RES_ravi",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "phone": "7894561237",
+      "role": "RESIDENT",
+      "houseId": "H105",
+      "status": "ACTIVE",
+      "updatedAt": "2026-10-08T01:50:48.879552"
+    },
+    "USR_RES_7": {
+      "userId": "USR_RES_7",
+      "name": "Aditi Rao",
+      "email": "resident107@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H107",
+      "status": "ACTIVE"
+    },
+    "USR_RES_8": {
+      "userId": "USR_RES_8",
+      "name": "Kabir Mehta",
+      "email": "resident108@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H108",
+      "status": "ACTIVE"
+    },
+    "USR_RES_9": {
+      "userId": "USR_RES_9",
+      "name": "Meera Nair",
+      "email": "resident109@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H109",
+      "status": "ACTIVE"
+    },
+    "USR_RES_10": {
+      "userId": "USR_RES_10",
+      "name": "Rohan Das",
+      "email": "resident110@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H110",
+      "status": "ACTIVE"
+    },
+    "USR_RES_11": {
+      "userId": "USR_RES_11",
+      "name": "Isha Kapoor",
+      "email": "resident111@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H111",
+      "status": "ACTIVE"
+    },
+    "USR_RES_12": {
+      "userId": "USR_RES_12",
+      "name": "Neel Shah",
+      "email": "resident112@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H112",
+      "status": "ACTIVE"
+    },
+    "USR_RES_13": {
+      "userId": "USR_RES_13",
+      "name": "Kavya Iyer",
+      "email": "resident113@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H113",
+      "status": "ACTIVE"
+    },
+    "USR_RES_14": {
+      "userId": "USR_RES_14",
+      "name": "Dev Malhotra",
+      "email": "resident114@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H114",
+      "status": "ACTIVE"
+    },
+    "USR_RES_15": {
+      "userId": "USR_RES_15",
+      "name": "Tara Menon",
+      "email": "resident115@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H115",
+      "status": "ACTIVE"
+    },
+    "USR_RES_16": {
+      "userId": "USR_RES_16",
+      "name": "Aarav Gupta",
+      "email": "resident116@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H116",
+      "status": "ACTIVE"
+    },
+    "USR_RES_17": {
+      "userId": "USR_RES_17",
+      "name": "Diya Bose",
+      "email": "resident117@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H117",
+      "status": "ACTIVE"
+    },
+    "USR_RES_18": {
+      "userId": "USR_RES_18",
+      "name": "Samir Joshi",
+      "email": "resident118@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H118",
+      "status": "ACTIVE"
+    },
+    "USR_RES_19": {
+      "userId": "USR_RES_19",
+      "name": "Nisha Kulkarni",
+      "email": "resident119@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H119",
+      "status": "ACTIVE"
+    },
+    "USR_RES_20": {
+      "userId": "USR_RES_20",
+      "name": "Aditya Verma",
+      "email": "resident120@aquanest.test",
+      "phone": "",
+      "role": "RESIDENT",
+      "houseId": "H120",
+      "status": "ACTIVE"
+    }
+  },
+  "houses": {
+    "H101": {
+      "houseId": "H101",
+      "houseNumber": "101",
+      "floor": 1,
+      "residentId": "USR_RES_1",
+      "residentName": "Rajesh Sharma",
+      "meterId": "METER_H101",
+      "status": "ACTIVE",
+      "currentUsageLitres": 2.1,
+      "todayUsageLitres": 295.0,
+      "monthlyUsageLitres": 7227.5,
+      "anomalyStatus": "NORMAL",
+      "updatedAt": "2026-10-07T22:29:52.870246"
+    },
+    "H102": {
+      "houseId": "H102",
+      "houseNumber": "102",
+      "floor": 1,
+      "residentId": "USR_RES_2",
+      "residentName": "Priya Venkatesh",
+      "meterId": "METER_H102",
+      "status": "ACTIVE",
+      "currentUsageLitres": 1.8,
+      "todayUsageLitres": 340.0,
+      "monthlyUsageLitres": 8330.0,
+      "anomalyStatus": "NORMAL",
+      "updatedAt": "2026-10-07T22:29:52.879375"
+    },
+    "H103": {
+      "houseId": "H103",
+      "houseNumber": "103",
+      "floor": 1,
+      "residentId": "USR_RES_3",
+      "residentName": "Arun Kumar",
+      "meterId": "METER_H103",
+      "status": "ACTIVE",
+      "currentUsageLitres": 2.4,
+      "todayUsageLitres": 385.0,
+      "monthlyUsageLitres": 9432.5,
+      "anomalyStatus": "NORMAL",
+      "updatedAt": "2026-10-07T22:29:52.889322"
+    },
+    "H104": {
+      "houseId": "H104",
+      "houseNumber": "104",
+      "floor": 2,
+      "residentId": "USR_RES_4",
+      "residentName": "Sneha Patel",
+      "meterId": "METER_H104",
+      "status": "ACTIVE",
+      "currentUsageLitres": 4.8,
+      "todayUsageLitres": 850.0,
+      "monthlyUsageLitres": 20825.0,
+      "anomalyStatus": "ABNORMAL",
+      "updatedAt": "2026-10-07T22:29:52.898829"
+    },
+    "H105": {
+      "houseId": "H105",
+      "houseNumber": "105",
+      "floor": 2,
+      "residentId": "USR_RES_5",
+      "residentName": "Vikram Malhotra",
+      "meterId": "METER_H105",
+      "status": "ACTIVE",
+      "currentUsageLitres": 2.7,
+      "todayUsageLitres": 475.0,
+      "monthlyUsageLitres": 11637.5,
+      "anomalyStatus": "NORMAL",
+      "updatedAt": "2026-10-07T22:29:52.910106"
+    },
+    "H106": {
+      "houseId": "H106",
+      "houseNumber": "106",
+      "floor": 2,
+      "residentId": "USR_RES_6",
+      "residentName": "Ananya Reddy",
+      "meterId": "METER_H106",
+      "status": "ACTIVE",
+      "currentUsageLitres": 3.0,
+      "todayUsageLitres": 520.0,
+      "monthlyUsageLitres": 12740.0,
+      "anomalyStatus": "NORMAL",
+      "updatedAt": "2026-10-07T22:29:52.918611"
+    },
+    "H107": {
+      "houseId": "H107",
+      "houseNumber": "107",
+      "floor": 2,
+      "residentId": "USR_RES_7",
+      "residentName": "Aditi Rao",
+      "meterId": "METER_H107",
+      "status": "ACTIVE",
+      "currentUsageLitres": 6.3,
+      "todayUsageLitres": 380.0,
+      "monthlyUsageLitres": 11400.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H108": {
+      "houseId": "H108",
+      "houseNumber": "108",
+      "floor": 2,
+      "residentId": "USR_RES_8",
+      "residentName": "Kabir Mehta",
+      "meterId": "METER_H108",
+      "status": "ACTIVE",
+      "currentUsageLitres": 6.8,
+      "todayUsageLitres": 410.0,
+      "monthlyUsageLitres": 12300.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H109": {
+      "houseId": "H109",
+      "houseNumber": "109",
+      "floor": 3,
+      "residentId": "USR_RES_9",
+      "residentName": "Meera Nair",
+      "meterId": "METER_H109",
+      "status": "ACTIVE",
+      "currentUsageLitres": 7.3,
+      "todayUsageLitres": 440.0,
+      "monthlyUsageLitres": 13200.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H110": {
+      "houseId": "H110",
+      "houseNumber": "110",
+      "floor": 3,
+      "residentId": "USR_RES_10",
+      "residentName": "Rohan Das",
+      "meterId": "METER_H110",
+      "status": "ACTIVE",
+      "currentUsageLitres": 7.8,
+      "todayUsageLitres": 470.0,
+      "monthlyUsageLitres": 14100.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H111": {
+      "houseId": "H111",
+      "houseNumber": "111",
+      "floor": 3,
+      "residentId": "USR_RES_11",
+      "residentName": "Isha Kapoor",
+      "meterId": "METER_H111",
+      "status": "ACTIVE",
+      "currentUsageLitres": 8.3,
+      "todayUsageLitres": 500.0,
+      "monthlyUsageLitres": 15000.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H112": {
+      "houseId": "H112",
+      "houseNumber": "112",
+      "floor": 3,
+      "residentId": "USR_RES_12",
+      "residentName": "Neel Shah",
+      "meterId": "METER_H112",
+      "status": "ACTIVE",
+      "currentUsageLitres": 8.8,
+      "todayUsageLitres": 530.0,
+      "monthlyUsageLitres": 15900.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H113": {
+      "houseId": "H113",
+      "houseNumber": "113",
+      "floor": 4,
+      "residentId": "USR_RES_13",
+      "residentName": "Kavya Iyer",
+      "meterId": "METER_H113",
+      "status": "ACTIVE",
+      "currentUsageLitres": 9.3,
+      "todayUsageLitres": 560.0,
+      "monthlyUsageLitres": 16800.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H114": {
+      "houseId": "H114",
+      "houseNumber": "114",
+      "floor": 4,
+      "residentId": "USR_RES_14",
+      "residentName": "Dev Malhotra",
+      "meterId": "METER_H114",
+      "status": "ACTIVE",
+      "currentUsageLitres": 9.8,
+      "todayUsageLitres": 590.0,
+      "monthlyUsageLitres": 17700.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H115": {
+      "houseId": "H115",
+      "houseNumber": "115",
+      "floor": 4,
+      "residentId": "USR_RES_15",
+      "residentName": "Tara Menon",
+      "meterId": "METER_H115",
+      "status": "ACTIVE",
+      "currentUsageLitres": 10.3,
+      "todayUsageLitres": 620.0,
+      "monthlyUsageLitres": 18600.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H116": {
+      "houseId": "H116",
+      "houseNumber": "116",
+      "floor": 4,
+      "residentId": "USR_RES_16",
+      "residentName": "Aarav Gupta",
+      "meterId": "METER_H116",
+      "status": "ACTIVE",
+      "currentUsageLitres": 10.8,
+      "todayUsageLitres": 650.0,
+      "monthlyUsageLitres": 19500.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H117": {
+      "houseId": "H117",
+      "houseNumber": "117",
+      "floor": 5,
+      "residentId": "USR_RES_17",
+      "residentName": "Diya Bose",
+      "meterId": "METER_H117",
+      "status": "ACTIVE",
+      "currentUsageLitres": 11.3,
+      "todayUsageLitres": 680.0,
+      "monthlyUsageLitres": 20400.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H118": {
+      "houseId": "H118",
+      "houseNumber": "118",
+      "floor": 5,
+      "residentId": "USR_RES_18",
+      "residentName": "Samir Joshi",
+      "meterId": "METER_H118",
+      "status": "ACTIVE",
+      "currentUsageLitres": 11.8,
+      "todayUsageLitres": 710.0,
+      "monthlyUsageLitres": 21300.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H119": {
+      "houseId": "H119",
+      "houseNumber": "119",
+      "floor": 5,
+      "residentId": "USR_RES_19",
+      "residentName": "Nisha Kulkarni",
+      "meterId": "METER_H119",
+      "status": "ACTIVE",
+      "currentUsageLitres": 12.3,
+      "todayUsageLitres": 740.0,
+      "monthlyUsageLitres": 22200.0,
+      "anomalyStatus": "NORMAL"
+    },
+    "H120": {
+      "houseId": "H120",
+      "houseNumber": "120",
+      "floor": 5,
+      "residentId": "USR_RES_20",
+      "residentName": "Aditya Verma",
+      "meterId": "METER_H120",
+      "status": "ACTIVE",
+      "currentUsageLitres": 12.8,
+      "todayUsageLitres": 770.0,
+      "monthlyUsageLitres": 23100.0,
+      "anomalyStatus": "NORMAL"
+    }
+  },
+  "tank_readings": {
+    "TR_CURRENT": {
+      "id": "TR_CURRENT",
+      "timestamp": "2026-10-07T22:29:52.805237",
+      "levelPercent": 72.5,
+      "waterLitres": 2900.0,
+      "capacityLitres": 4000.0,
+      "sensorId": "JSN_SR04T_01",
+      "pumpStatus": "OFF",
+      "pumpMode": "AUTO",
+      "fillRateLpm": 0.0,
+      "emptyRateLpm": 8.4,
+      "updatedAt": "2026-10-07T22:29:52.928644"
+    }
+  },
+  "bills": {
+    "BILL_202609_H101": {
+      "id": "BILL_202609_H101",
+      "houseId": "H101",
+      "houseNumber": "101",
+      "residentName": "Rajesh Sharma",
+      "billingPeriod": "2026-09",
+      "consumptionLitres": 7228.0,
+      "waterRate": 0.1,
+      "waterCharge": 722.8,
+      "fixedCharge": 200.0,
+      "totalAmount": 922.8,
+      "dueDate": "2026-10-10",
+      "paymentStatus": "PAID",
+      "updatedAt": "2026-10-07T22:29:52.939144"
+    },
+    "BILL_202609_H102": {
+      "id": "BILL_202609_H102",
+      "houseId": "H102",
+      "houseNumber": "102",
+      "residentName": "Priya Venkatesh",
+      "billingPeriod": "2026-09",
+      "consumptionLitres": 8330.0,
+      "waterRate": 0.1,
+      "waterCharge": 833.0,
+      "fixedCharge": 200.0,
+      "totalAmount": 1033.0,
+      "dueDate": "2026-10-10",
+      "paymentStatus": "PAID",
+      "updatedAt": "2026-10-07T22:29:52.949998"
+    },
+    "BILL_202609_H103": {
+      "id": "BILL_202609_H103",
+      "houseId": "H103",
+      "houseNumber": "103",
+      "residentName": "Arun Kumar",
+      "billingPeriod": "2026-09",
+      "consumptionLitres": 9433.0,
+      "waterRate": 0.1,
+      "waterCharge": 943.3,
+      "fixedCharge": 200.0,
+      "totalAmount": 1143.3,
+      "dueDate": "2026-10-10",
+      "paymentStatus": "PENDING",
+      "updatedAt": "2026-10-07T22:29:52.959053"
+    },
+    "BILL_202609_H104": {
+      "id": "BILL_202609_H104",
+      "houseId": "H104",
+      "houseNumber": "104",
+      "residentName": "Sneha Patel",
+      "billingPeriod": "2026-09",
+      "consumptionLitres": 20825.0,
+      "waterRate": 0.1,
+      "waterCharge": 2082.5,
+      "fixedCharge": 200.0,
+      "totalAmount": 2282.5,
+      "dueDate": "2026-10-10",
+      "paymentStatus": "PAID",
+      "updatedAt": "2026-10-07T22:29:52.970543"
+    },
+    "BILL_202609_H105": {
+      "id": "BILL_202609_H105",
+      "houseId": "H105",
+      "houseNumber": "105",
+      "residentName": "Vikram Malhotra",
+      "billingPeriod": "2026-09",
+      "consumptionLitres": 11638.0,
+      "waterRate": 0.1,
+      "waterCharge": 1163.8,
+      "fixedCharge": 200.0,
+      "totalAmount": 1363.8,
+      "dueDate": "2026-10-10",
+      "paymentStatus": "OVERDUE",
+      "updatedAt": "2026-10-07T22:29:52.979976"
+    },
+    "BILL_202609_H106": {
+      "id": "BILL_202609_H106",
+      "houseId": "H106",
+      "houseNumber": "106",
+      "residentName": "Ananya Reddy",
+      "billingPeriod": "2026-09",
+      "consumptionLitres": 12740.0,
+      "waterRate": 0.1,
+      "waterCharge": 1274.0,
+      "fixedCharge": 200.0,
+      "totalAmount": 1474.0,
+      "dueDate": "2026-10-10",
+      "paymentStatus": "PAID",
+      "updatedAt": "2026-10-07T22:29:52.989269"
+    }
+  },
+  "pump_logs": {
+    "PL_1": {
+      "id": "PL_1",
+      "status": "ON",
+      "mode": "AUTO",
+      "tankLevel": 19.5,
+      "startTime": "2026-10-07T22:29:52.805237",
+      "durationSeconds": 2700,
+      "trigger": "LOW_LEVEL_AUTO",
+      "updatedAt": "2026-10-07T22:29:52.999883"
+    },
+    "PL_2": {
+      "id": "PL_2",
+      "status": "ON",
+      "mode": "AUTO",
+      "tankLevel": 20.0,
+      "startTime": "2026-10-07T22:29:52.805237",
+      "durationSeconds": 2400,
+      "trigger": "LOW_LEVEL_AUTO",
+      "updatedAt": "2026-10-07T22:29:53.009041"
+    }
+  },
+  "leakage_alerts": {
+    "LKG_TANK_01": {
+      "id": "LKG_TANK_01",
+      "type": "TANK_LEAKAGE",
+      "zone": "Overhead Tank Zone",
+      "estimatedLossLitres": 145.0,
+      "severity": "WARNING",
+      "evidence": "Tank level dropped 3.6% over 120 min while pump idle.",
+      "status": "INVESTIGATING",
+      "updatedAt": "2026-10-07T22:29:53.021057"
+    },
+    "LKG_PIPE_01": {
+      "id": "LKG_PIPE_01",
+      "type": "PIPE_LEAKAGE",
+      "zone": "Main Distribution Pipe - Wing B",
+      "estimatedLossLitres": 380.0,
+      "severity": "POSSIBLE_LEAK",
+      "evidence": "Main flow (18.5 L/min) vs House sum (11.2 L/min) with 0.6 bar drop.",
+      "status": "NEW",
+      "updatedAt": "2026-10-07T22:29:53.029564"
+    }
+  },
+  "alerts": {
+    "ALT_1": {
+      "id": "ALT_1",
+      "type": "PIPE_LEAKAGE",
+      "severity": "CRITICAL",
+      "target": "DISTRIBUTION",
+      "message": "Distribution mismatch detected: 7.3 L/min unexplained loss in Wing B.",
+      "timestamp": "2026-10-07T22:29:52.805237",
+      "updatedAt": "2026-10-07T22:29:53.038736"
+    },
+    "ALT_2": {
+      "id": "ALT_2",
+      "type": "ABNORMAL_CONSUMPTION",
+      "severity": "WARNING",
+      "target": "H104",
+      "message": "House 104 abnormal usage: 4.5 hours continuous nocturnal flow detected.",
+      "timestamp": "2026-10-07T22:29:52.805237",
+      "updatedAt": "2026-10-07T22:29:53.048923"
+    },
+    "ALT_3": {
+      "id": "ALT_3",
+      "type": "TANK_LEAKAGE",
+      "severity": "WARNING",
+      "target": "MAIN",
+      "message": "Possible tank leakage detected: Unexplained 145 L drop while pump was idle.",
+      "timestamp": "2026-10-07T22:29:52.805237",
+      "updatedAt": "2026-10-07T22:29:53.059535"
+    },
+    "ALT_4": {
+      "id": "ALT_4",
+      "type": "PUMP",
+      "severity": "INFO",
+      "target": "ALL",
+      "message": "Automatic pump cycle completed. Overhead tank replenished to 88.5%.",
+      "timestamp": "2026-10-07T22:29:52.805237",
+      "updatedAt": "2026-10-07T22:29:53.067909"
+    }
+  },
+  "settings": {
+    "global_config": {
+      "id": "global_config",
+      "tankCapacityLitres": 4000.0,
+      "lowThresholdPercent": 20.0,
+      "fullThresholdPercent": 90.0,
+      "waterTariffPerLitre": 0.1,
+      "fixedMonthlyCharge": 200.0,
+      "flowCalibrationFactor": 450.0,
+      "pressureThresholdBar": 1.8,
+      "leakageTolerancePercent": 5.0,
+      "demoMode": true,
+      "updatedAt": "2026-10-07T22:29:53.078991"
+    }
+  }
+}
